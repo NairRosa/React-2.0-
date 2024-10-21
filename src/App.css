@@ -6,7 +6,8 @@
 }
 
 body {
-  background: #fff;
+  padding: 0;
+  background: #009951;
   height: 100vh; /* Mantido aqui para o corpo */
   display: flex; /* Para facilitar o alinhamento de conteúdo */
   flex-direction: column; /* Permitir empilhamento */
@@ -127,6 +128,7 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  width: 1345px;
   height: 280px; /* Ajustado para auto */
   background: #E6E6E6; /* Cinza claro */
   padding: 1rem; /* Adicionado padding */
@@ -179,12 +181,6 @@ a:hover {
 
 
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
 .logo {
   height: 6em;
