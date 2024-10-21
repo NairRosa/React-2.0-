@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Para melhor controle de layout */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #fff;
+  height: 100vh; /* Mantido aqui para o corpo */
+  display: flex; /* Para facilitar o alinhamento de conteúdo */
+  flex-direction: column; /* Permitir empilhamento */
+}
+
+.logo {
+  font-size: 38px;
+  margin-right: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row; /* Para permitir que o menu se empilhe corretamente */
+  justify-content: space-around;
+  background: #009951; /* Verde */
+  width: 100%;
+  height: 100px;
+}
+
+.content-header {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Alinha logo e título com o menu */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 0; /* Adicionado padding para espaçamento lateral */
+}
+
+.content-header h4 {
+  padding-top: 0rem;
+  color: #fff; /* Para melhor contraste com o fundo claro */
+}
+
+.logo img {
+  width: 100px; /* Ajuste a largura da imagem conforme necessário */
+  height: auto; /* Manter a proporção */
+}
+
+.btn-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.btn-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff; /* Para melhor contraste com o fundo */
+  padding: 40px 150px; /* Ajuste o padding conforme necessário */
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.menu-icon a {
+  color: #009951; /* Para melhor contraste com o fundo claro */
+  font-size: 24px; /* Ajuste conforme necessário */
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo */
+  padding: 0rem; /* Espaçamento ao redor do conteúdo */
+}
+
+.display h1 {
+  margin-bottom: 1rem; /* Espaçamento abaixo do título */
+}
+
+.display-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #009951;
+  height: 600px;
+  width: 100%;
+}
+
+#title {
+  padding-top: 250px;
+  color: #fff;
+}
+
+#sub-title {
+  color: #fff;
+  margin-top: -220px;
+}
+
+.arrow-down { /* Corrigido o nome da classe */
+  color: #000000;
+}
+
+.img-apps-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 155px;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+}
+
+.cards {
+  height: 100px;
+  width: 100px;
+  border-radius: 60px; /* Borda arredondada */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 280px; /* Ajustado para auto */
+  background: #E6E6E6; /* Cinza claro */
+  padding: 1rem; /* Adicionado padding */
+  text-align: center; /* Centraliza o texto do footer */
+  color: #000000; /* Para melhor contraste */
+  margin-top: auto; /* Faz o footer ficar na parte inferior */
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-footer p {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  padding-top: -10px; /* Padding não pode ser negativo, remova se não for necessário */
+}
+
+a:hover {
+  text-decoration: underline; /* Adiciona um efeito de hover para links */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
