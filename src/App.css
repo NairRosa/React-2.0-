@@ -1,219 +1,275 @@
+/* Reset e Estilos Globais */
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* Para melhor controle de layout */
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  padding: 0;
   background: #009951;
-  height: 100vh; /* Mantido aqui para o corpo */
-  display: flex; /* Para facilitar o alinhamento de conteúdo */
-  flex-direction: column; /* Permitir empilhamento */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-  font-size: 38px;
-  margin-right: 5px;
+#root {
+  max-width: 4500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.externa {
+  padding-bottom: -40px;
 }
 
+/* Estilos do Header */
 .header {
   display: flex;
-  flex-direction: row; /* Para permitir que o menu se empilhe corretamente */
-  justify-content: space-around;
-  background: #009951; /* Verde */
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: #009951;
+  padding: 0;
   height: 100px;
+  width: 100%;
 }
 
 .content-header {
-  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start; /* Alinha logo e título com o menu */
-  align-items: center; /* Centraliza verticalmente */
-  padding: 0; /* Adicionado padding para espaçamento lateral */
+  align-items: center;
 }
 
 .content-header h4 {
-  padding-top: 0rem;
-  color: #fff; /* Para melhor contraste com o fundo claro */
+  color: #fff;
+  margin-left: 1rem;
 }
 
 .logo img {
-  width: 100px; /* Ajuste a largura da imagem conforme necessário */
-  height: auto; /* Manter a proporção */
+  height: 105px;
+  width: auto;
+}
+
+.btn-menu .menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding: 1rem 1.5rem;
 }
 
 .btn-menu {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  gap: 2rem;
   font-size: 22px;
-  font-weight: 400;
 }
 
-.btn-menu a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #fff; /* Para melhor contraste com o fundo */
-  padding: 40px 150px; /* Ajuste o padding conforme necessário */
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  gap: 0rem;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.menu-icon a {
-  color: #009951; /* Para melhor contraste com o fundo claro */
-  font-size: 24px; /* Ajuste conforme necessário */
-}
-
+/* Estilos da Área Principal */
 .display {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo */
-  padding: 0rem; /* Espaçamento ao redor do conteúdo */
+  flex: 1;
+  background: #fff;
+  color: #000;
 }
 
-.display h1 {
-  margin-bottom: 1rem; /* Espaçamento abaixo do título */
+.container {
+  flex: 1;
+  background: #fff;
+  color: #000;
 }
 
 .display-title {
+  height: 590px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background: #009951;
-  height: 600px;
-  width: 100%;
-}
-
-#title {
-  padding-top: 250px;
   color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: -32px;
 }
 
-#sub-title {
-  color: #fff;
-  margin-top: -220px;
+.display-title h1 {
+  font-size: 2.5rem;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
 
-.arrow-down { /* Corrigido o nome da classe */
-  color: #000000;
+.display-title #sub-title {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.display-p {
+  background-color: #fff;
 }
 
+.arrow-down {
+  margin-top: 8rem;
+  width: 80px;
+  color: #000;
+}
+
+/* Ajuste para Ocupação de Largura Completa */
+.container,
+.display,
+.display-title,
+.primary-section,
+.secondary-section,
+.header,
+.img-apps-inline,
+.footer {
+  width: 100vw; /* Ocupa toda a largura da tela */
+  margin-left: calc(50% - 50vw); /* Remove margem extra nas laterais */
+  padding: 1rem 2rem; /* Padding interno para centralizar o conteúdo */
+}
+
+/* Estilos de img-apps-inline */
 .img-apps-inline {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 155px;
-  height: 200px;
-  width: 100%;
-  align-items: center;
+  height: 175px;
+  gap: 8rem;
+  background: #fff;
+  color: #000;
 }
 
 .cards {
-  height: 100px;
-  width: 100px;
-  border-radius: 60px; /* Borda arredondada */
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
-.footer {
+/* Estilos das Sessões */
+.section {
+  margin: 2rem 0;
+}
+
+.section h1 {
+  color: #000;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
+.section .content {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.primary-section {
   display: flex;
   flex-direction: column;
-  width: 1345px;
-  height: 280px; /* Ajustado para auto */
-  background: #E6E6E6; /* Cinza claro */
-  padding: 1rem; /* Adicionado padding */
-  text-align: center; /* Centraliza o texto do footer */
-  color: #000000; /* Para melhor contraste */
-  margin-top: auto; /* Faz o footer ficar na parte inferior */
+  justify-content: start;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.secondary-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+  padding-right: 100px;
+
+}
+
+.content p {
+  margin: 1rem 0;
+}
+
+.content-img img {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+/* Estilos do Footer */
+.footer {
+  background: #E6E6E6;
+  color: #000;
+  text-align: center;
+  padding: 2rem 1rem;
+  height: 300px;
+  margin-bottom: -32px;
 }
 
 .container-footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.content-footer {
-  display: flex;
-  flex-direction: column;
+.content-footer h3 {
+  padding-bottom: 1.5rem;
 }
 
-.content-footer p {
-  display: flex;
-  flex-direction: column;
-}
-
-h3 {
-  color: #000000;
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-
-a {
-  color: #000000;
+.content-footer a {
+  color: #000;
   text-decoration: none;
-  padding-top: -10px; /* Padding não pode ser negativo, remova se não for necessário */
+  line-height: 45px;
 }
 
-a:hover {
-  text-decoration: underline; /* Adiciona um efeito de hover para links */
+.content-footer a:hover {
+  text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn-menu .menu a {
+    padding: 0.5rem 1rem;
+  }
+
+  .display-title {
+    padding: 3rem 1rem;
+  }
+
+  .cards {
+    height: 60px;
+    width: 60px;
+  }
+
+  .img-apps-inline,
+  .footer {
+    padding: 1rem; /* Reduz padding para telas menores */
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .btn-menu {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.read-the-docs {
-  color: #888;
+  .display-title h1 {
+    font-size: 2rem;
+  }
+
+  .display-title #sub-title {
+    font-size: 1rem;
+  }
+
+  .cards {
+    height: 50px;
+    width: 50px;
+  }
+
+  .img-apps-inline,
+  .footer {
+    padding: 0.5rem; /* Padding mínimo para melhor ajuste em telas pequenas */
+  }
+
+  .content-footer h3, .content-footer a {
+    font-size: 0.9rem;
+  }
 }

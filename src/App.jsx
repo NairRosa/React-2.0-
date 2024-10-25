@@ -3,7 +3,7 @@ import '../src/App.css'; // Importando o CSS
 
 const App = () => {
   return (
-    <div>
+    <div className='externa'>
       <header className="header">
         <div className="content-header">
           <div className="logo">
@@ -31,19 +31,19 @@ const App = () => {
             ))}
           </div>
           <div className="content">
-            <p>
+            <p className='display-p'>
               A GREEN BOX oferece dicas rápidas de como fazer um consumo consciente. <br />
               Somos um conjunto utilitários de aplicativos, que atuam em diferentes áreas com a mesma finalidade: <br />
               Promover um mundo mais sustentável e consciente, de forma simples e corriqueira.
             </p>
-            <div className="content-img">
-              <img src="/img/2.png" alt="teste" />
+            <div className="content-img-">
+              <img src="/img/" alt="teste" />
             </div>
           </div>
         </div>
 
         {['BrechóBox', 'EngBox', 'FarmaBox', 'GastrôBox', 'VetBox'].map((title, index) => (
-          <div className="section" key={title}>
+          <div className={index % 2 === 0 ? "primary-section" : "secondary-section"} key={title}>
             <h1>{title}</h1>
             <div className="content">
               <p>
