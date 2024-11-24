@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../src/App.css';
 import { SlSocialInstagram, SlSocialGithub, SlPhone, SlSupport, SlArrowDown } from "react-icons/sl";
 import { useIntersectionObserver } from './hooks/useIntersectionObserver';
+import Box3D from './components/Box3D';
 
 // Componente para o Card do App
 const AppCard = ({ title, index, onClick }) => (
@@ -91,6 +92,7 @@ const App = () => {
         <div className="display">
           <div className="display-title">
             <h1 id="title" className="animate-on-scroll fade-in-up">GREEN BOXING</h1>
+            <Box3D />
             <p id="sub-title" className="animate-on-scroll fade-in-up" style={{animationDelay: '0.2s'}}>
               PENSE FORA DA CAIXA, E PROMOVA UM FUTURO MAIS SUSTENTÁVEL
             </p>
